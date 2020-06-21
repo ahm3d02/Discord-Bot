@@ -1,7 +1,8 @@
 const discord = require("discord.js");
 const client = new discord.Client();
+const fs = require('fs');
 
-client.login("NzI0MDg5OTczNzgyODcyMTM0.Xu-Cyg.CTeUsdxW4nj1AJfhabvGVCRkd_0");
+client.login(fs.readFileSync('.gitignore', 'utf8'));
 
 client.on('ready', () => {
   console.log("Bot is running");
